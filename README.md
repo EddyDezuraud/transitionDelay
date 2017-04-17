@@ -1,13 +1,30 @@
 ﻿# transitionDelay
 
+## 1. Getting Started
+
+#### 1.1. Installation
+
+The simplest method is to copy paste this snippet just before your closing `</body>` tag.
+
+```html
+<script src="http://eddydezuraud.fr/assets/transitionDelay/transitionDelay.js"></script>
+```
+
 The simplest method is to copy paste this snippet just before your closing <body>
 
-<script src="http://eddydezuraud.fr/assets/transitionDelay/transitionDelay.js"></script>
 
+## 2. Configuration
 
+#### 2.1. Practical Example
+```html
+<div class="items_transition">Hello</div>
+<div class="items_transition">World</div>
+<div class="items_transition">Let's</div>
+<div class="items_transition">Make</div>
+<div class="items_transition">Nice transition !</div>
+```
 
-But you can also:
-
-Download zip
-npm install transitionDelay
-bower install transitionDelay
+```js
+// Add auto increment transition delay to this elements
+transitionDelay($('.items_transition'), 0.1, 0);
+```
